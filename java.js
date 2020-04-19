@@ -39,9 +39,4 @@ if (z === "what is your problem")
     alert ("i have no idea");
     return false;
    }
-if (z === "fuck") 
-   { 
-    alert ("Hayy please don't abuse");
-    return false;
-   }
 }
