@@ -28,15 +28,4 @@ if (x === "what is your name")
     alert ("my name is bapuji");
     return false;
    }
-var z = document.getElementById('ai').value;
-if (z === "how are you") 
-   { 
-    alert ("i am fine");
-    return false;
-   }
-if (z === "what is your problem") 
-   { 
-    alert ("i have no idea");
-    return false;
-   }
-}
+  }    
