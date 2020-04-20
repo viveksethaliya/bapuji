@@ -37,4 +37,9 @@ if (x === "play some music")
     window.open("https://viveksethaliya.github.io/bapuji/music.mp3", "_blank"); 
     return false;
    }
+if (x === "can i ask you a qustion") 
+   { 
+    alert ("you alredy asked");
+    return false;
+   }    
   }    
