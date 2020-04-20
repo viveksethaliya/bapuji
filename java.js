@@ -16,9 +16,8 @@ if (x === "how are you")
    { 
     alert ("i am fine");
     return false;
-   }
-var x = document.getElementById('ai').value; 
-   if (x === "hi") 
+   } 
+if (x === "hi") 
    { 
     alert ("hello!");
     return false;
@@ -28,4 +27,10 @@ if (x === "what is your name")
     alert ("my name is bapuji");
     return false;
    }
+if (x === "where are you from") 
+   { 
+    alert ("i am from india");
+    return false;
+   }
+    
   }    
