@@ -2,47 +2,115 @@
      <title>bapuji.com</title>
      <head>
           <link rel="shortcut icon" href="bapuji.png">
+          <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
           <meta name="viewport" content="width=device-width, maximum-scale=2.0">
           <style>
                .bu {
-                    background-color:green;
-                    color: #808080;
+                    background-color:#66fcf1;
+                    color: #000000;
                     cursor:pointer;
                     border-radius:8px;
                     border:none;
-                    font-size:16px;
-                    
+                    box-shadow: 2px 2px 8px #000000;
                }
                .tb{
                     border-radius:8px;
-                    border: 2px solid #00ff00;
+                    box-shadow: 2px 2px 8px #000000;
+               }
+               .top{
+                    width: 100%;
+               } 
+               .bottom{
+                    width: 100%;
+               }
+               b{
+                    font-family: 'Cairo';
                }
                img{
-                    margin: 10%;
+                    margin: 5%;
+               }
+               @media (min-width: 700px){
+                    b{
+                         margin-top: 30%;
+                         font-size: 2vw;
+                    }
+                    img{
+                         height: 40%;
+                         width: 25%;
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         right: 0;
+                         bottom: 50%;
+                         margin: auto;
+                    }
+                    input{
+                         height: 3vw;
+                         width: 20vw;
+                    }
+                    .bu{
+                         width: 10vw;
+                         height: 3vw;
+                         font-size:1.5vw;
+                         margin-left: 3%;
+                    }
+                    .top{
+                         height: 50%;
+                    }
+                    .bottom{
+                         height: 50%;
+                    }
+               }
+               @media (max-width: 699){
+                    img{
+                         height: 30%;
+                         width: 40%;
+                         position:absolute;
+                         top:0;
+                         bottom:50%;
+                         left:0;
+                         right: 0;
+                         margin: auto;
+                    }
+                    b{
+                         font-size: 3vw;
+                         margin-top: 30%;
+                         margin-left: 5%;
+                    }
+                    input{
+                         height: 5vw;
+                         width: 40vw;
+                    }
+                    .top{
+                         height: 30%;
+                    }
+                    .bottom{
+                         height: 70%;
+                         margin-top: 20%;
+                    }
+                    .bu{
+                         width: 22vw;
+                         height: 5vw;
+                    }
                }
           </style>
      </head>
-     <body bgcolor="#00cc99">
-          <header>
-          </header>
-          <center>
-               <form>
-                    <img src="bapuji.png" width="100" hight="100">
-                    <br>
-                    <br>
-                    <input type="text" id="ai" class="tb"> 
-                    <button class="bu" onclick="val_txt();"><font size="2">get ans.</font></button>
-               </form>
-          </center>
-          <script src="java.js"> 
-          </script>
-          <footer>
+     <body bgcolor="#1f2833">
+          <div class="top">
+               <img src="bapuji.png">
+          </div>
+          <div class="bottom">
                <center>
-               <br>
-               <font color="red">
-                    <b>special characters, capital letters are not allow to this web</b>
-               </font>
+                    <input type="text" id="ai" class="tb"> 
+                    <button class="bu" onclick="val_txt();">get ans.</button>
+                    <script src="java.js"> 
+                    </script>
+                    <br>
+                    <br>
+                    <font color="#66fcf1">
+                         <b>special characters, capital letters are not allow to this web</b>
+                    </font>
                </center>
-          </footer>
+          </div>
      </body>
 </html>
