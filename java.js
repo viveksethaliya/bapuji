@@ -32,5 +32,9 @@ if (x === "where are you from")
     alert ("i am from india");
     return false;
    }
-    
+if (x === "play some music") 
+   { 
+    window.open("music.mp3", "_blank"); 
+    return false;
+   }
   }    
